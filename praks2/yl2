@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# kasutaja tervitus
+# 
+# skripti algus
+#
+# echo "Tere User!#
+echo -n "Tere"
+echo -n 'who am i | cut -c1 | tr [:lower] [:upper]' # lõika esimine täht ja muuda suureks
+echo -n 'wh am i | cut -c2-' # lõika kõik tähed alatest 2-st
+echo "!"
+#
+# skripti lopp

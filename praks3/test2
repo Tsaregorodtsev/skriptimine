@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# kella ja kalendri valjastamine
+#
+kuupaev=$(date +"%A, %B, %M")
+kell=$(date +"%H:%M")
+#
+koostame vajlastrukk
+echo "Today Is $kuupaev"
+echo # tuhi rida
+echo "Time Is $kell"
+echo
+# jalle vajalik muutuja
+kuu=$(date +"%B %Y")
+echo "calendar of $kuu"
+echo "================"
+echo
+echo "================"
+# kalendri muutja
+kalendar=$(cal | tail -n 7)
+echo "$kalendar"
+echo "================="
+

@@ -3,9 +3,9 @@
 # Kella ja kuupäeva väljastamine
 #
 # defineerime kella muutuja
-kell=`date +"%H:%M"`
+kell=$(date +"%H:%M")
 # defineerime kuupaeva muutuja
-kuupaev=`date +"%d.%m.%Y"`
+kuupaev=$(date +"%d.%m.%Y")
 # trukime valja koos selgitava tekstiga
 echo "Kell on $kell"
 echo "Kuupaev on $kuupaev"

@@ -1,0 +1,30 @@
+#!/bin/bash
+#
+# arvu positiivsuse kontroll
+#
+# kasuta kasurealised parameetrid arvude sisestamiseks
+# kontrollime, kas parameetrite arc on 1
+# kui nii ei ole
+if [ $# -ne 1 ]; then
+echo "kasutus juhend:"
+echo "$0 arv"
+echo "naiteks: $0 -5"
+# muidu kui kasutaja sisestab ainult uhe parammeeeter
+else
+arv=$1
+# kontrollime, kas arv on paaris
+if [ $arv -gt 0 ]; then
+	#arv on positiivne
+	echo "$arv on positiivne"
+# muidu kui arv on vaiksem kui 0
+elif [ $arv -lt 0 ]; then
+	# arv on negatiivne
+	echo "$arv on negatiivne"
+# kui ei ole suurem ega vaiksem kui 0
+else
+	echo "$arv on neutraalne"
+# if lause lopp
+fi
+echo "programmi lopp"
+# valise if lause lopp
+fi

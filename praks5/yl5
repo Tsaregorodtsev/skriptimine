@@ -12,6 +12,9 @@ echo "naiteks: $0 -5"
 # muidu kui kasutaja sisestab ainult uhe parammeeeter
 else
 arv=$1
+if ! [[ $arv =~ ^[-+]?[0-9]+$ ]]; then
+	echo "tekst sisestamine ei ole voimalik"
+else
 # kontrollime, kas arv on paaris
 if [ $arv -gt 0 ]; then
 	#arv on positiivne
@@ -25,6 +28,7 @@ else
 	echo "$arv on neutraalne"
 # if lause lopp
 fi
-echo "programmi lopp"
+# numbri voi teksti kontrolli lopp
+fi
 # valise if lause lopp
 fi

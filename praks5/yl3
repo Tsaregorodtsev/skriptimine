@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# arvu positiivsuse kontroll
+#
+# lubame kasutajle sisestada arvu vaartus
+echo -n "sisesta suvaline taisarv"
+read arv
+# kontrollime, kas arv on paaris
+if [ $arv -gt 0 ]; then
+	#arv on positiivne
+	echo "$arv on positiivne"
+# muidu kui arv on vaiksem kui 0
+elif [ $arv -lt 0 ]; then
+	# arv on negatiivne
+	echo "$arv on negatiivne"
+# kui ei ole suurem ega vaiksem kui 0
+else
+	echo "$arv on neutraalne"
+# if lause lopp
+fi
+echo "programmi lopp"
+

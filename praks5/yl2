@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# arv on positiivne voi negatiivne
+#
+echo -n "sissesta suvaline arv"
+read arv
+# arvutus
+if [ $arv -ge 0 ]
+then
+	#arv on positiivne
+	echo "$arv on positiivne"
+#muidu
+else
+	#arv on negatiivne
+	echo "$arv on negatiivne"
+# if lause lopp
+fi
+echo "programmi lopp"
+

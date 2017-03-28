@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# kasutaja sisendis sonu lugemine
+#
+echo -n "sisesta lause"
+read lause
+for sona in $lause
+do
+#echo $sona
+echo $sona
+kokku=$(($kokku + 1))
+done
+echo "lause koosneb $kokku sonast"

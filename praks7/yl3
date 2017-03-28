@@ -1,0 +1,36 @@
+#!/bin/bash
+#
+# parameetrid
+#
+if [ $# -ne 1 ]
+then
+echo "kasutus juhend lopeta skript"
+echo "naiteks $0 test.txt"
+exit 1
+else
+failinimi=$1
+# kontrollime kas fail on olemas
+if [ -f $failinimi ]; then
+echo "fail $failinimi on juba olemas"
+# kontrollime kas fail on tuhi
+if ! [ -s $failinimi ]; then
+echo "fail $failinimi on tuhi"
+else
+echo "antud $failinimi ei ole tuhi"
+fi
+echo " kui ei soovi umberkirjutada"
+read -p "sisesta nimi" uusinimi
+fi
+# lisame uue faili nimi kontroll
+if [ -n "$uusnimi" ]; then
+failinimi=$uusnimi
+fi
+touch $failinimi
+# kui eelmine kask - touch nimi on ok - $? on 0
+if [ $? -eq 0 ]; then
+echo "fail $failinimi on loodud"
+exit 0
+else
+echo "fail $failinimi loomisel on probleem"
+fi
+fi

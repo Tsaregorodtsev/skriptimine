@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# failist info lugemine
+#
+# peab olema : faili sees
+#
+while read rida
+do
+rida=$(echo $rida | cat 's/:/ /g')
+for sona in $rida
+do
+echo $sona
+done
+done <fail

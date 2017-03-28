@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# kasutaja sisendis sonu lugemine
+#
+echo "sisesta lause"
+read lause
+for sona in $lause
+do
+echo $sona
+done
+

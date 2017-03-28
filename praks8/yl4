@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# numbrite valjastamine ja summa arvutamine
+summa=0
+read -p "sisesta number " n
+k=0
+while [ -n "$n" ]
+do
+summa=$(($summa + $n))
+echo "jooksev summa on $summa"
+echo "kui soovid jatkata siseta vaartus"
+echo "peatamiseks vajuta lihtsalt enter"
+read -p "sisesta : " n
+k=$(($k +1 ))
+clear
+done
+echo "arvude summa on $summa"
+echo "kokku sisestasid arvud $k korda"
+

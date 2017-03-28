@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# trukkib numbrid 1 kuni 5
+summa=0
+echo -n "arvude "
+for((n = 1; n <= 5; n++))
+do
+echo -n "$n "
+summa=$(($summa + $n))
+done
+echo "summa = $summa"
+
+
+
+
+

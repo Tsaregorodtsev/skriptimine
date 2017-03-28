@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# numbrite valjastamine
+#
+summa=0
+echo -n "arvude "
+n=1
+while [ $n -le 5 ]
+do
+echo -n "$n "
+summa=$(($summa + $n))
+n=$(($n + 1))
+done
+echo "summa on $summa"

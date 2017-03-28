@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# parameetrid
+#
+if [ $# -ne 1 ]
+then
+echo "kasutus juhend lopeta skript"
+echo "naiteks $0 test.txt"
+exit 1
+else
+failinimi=$1
+touch $failinimi
+# kui eelmine kask - touch nimi on ok - $? on 0
+if [ $? -eq 0 ]; then
+echo "fail $failinimi on loodud"
+exit 0
+else 
+echo "fail $failinimi loomisel on probleem"
+fi
+fi

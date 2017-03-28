@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# parameetrid
+#
+if [ $# -ne 1 ]
+then
+echo "kasutus juhend lopeta skript"
+echo "naiteks $0 test.txt"
+exit 1
+else
+failinimi=$1
+touch $failinimi
+exit 0
+fi

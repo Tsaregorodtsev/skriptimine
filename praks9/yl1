@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# failist info lugemine
+#
+# peab olema : faili sees
+#
+for rida in $(cat fail)
+do
+echo $rida | cat 's/:/ /g'
+done

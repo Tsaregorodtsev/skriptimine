@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# Minu nimi on Vladislav
+#
+# Skripti nimi on info
+#
+# Ülesanne on teha skript
+echo -n  "Tere "
+echo -n `whoami `
+echo "!"
+#Esimine osa lõpp
+#
+# Nüüd on vaja vajutada enter klahv et edasi tegeleda
+read -p "Vajuta Enter et edasi tegeleda"
+# Nüüd väljastab kella aeg ja kuupäev
+echo "Täna on $(date)"
+echo "$(cal)"
+# Kõik

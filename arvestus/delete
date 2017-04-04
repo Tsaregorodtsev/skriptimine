@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# Minu nimi on Vladislav
+#
+# Skriptimi nimi on delete
+#
+# Ülesanne on teha skript nimega delete
+#
+echo -n "Sisesta fail mide te tahate kustutada "
+read file
+if [ -f "$file" ];
+then
+rm -f $file
+echo "Fail on kustutatud"
+elif [ -z "$file" ]; then
+echo "Palun sisestage faili nimi, muidu skript ei tööta"
+else
+echo "Fail ei eksisteeri"
+fi
+# Siin  kui inimene vajutab enter on nähtav meie kausta sisu
+read -p "Vajutage enter et vaadata kausta sisu"
+ls -lo

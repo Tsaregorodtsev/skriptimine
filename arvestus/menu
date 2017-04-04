@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# Minu nimi on Vladislav
+#
+# Skripti nimi on menu
+#
+# On vaja koostada menu
+read -p "Vajuta enter et vaadata menüü "
+cat -n menu1 menu2 menu3
+read -p "Sisestage seda numbrit mis te tahate sööma " n
+if [ $n -eq 1 ]; then
+echo " Te valisite number 1"
+echo "Stick to you ribs"
+echo "Watch your cholesterol"
+echo "Enjoy your meal!"
+elif [ $n -eq 2 ]; then
+echo "Te valisite number 2"
+echo "British are coming!"
+echo "Enjoy your meal!"
+elif [ $n -eq 3 ]; then
+echo "Te valisite number 3"
+echo "Health foods..."
+echo "Dieting is so boring."
+echo "Enjoy your meal!"
+else [ -z "$n" ];
+echo "Palun tehke valik!"
+fi
